@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Site test</title>	
+		<script language="javascript">
+// fourni par gratos.be web site : http://www.gratos.be
+<!--
+function droite(e)
+{
+var message = "Vous n'êtes pas autorisé à copier cette page";
+if (navigator.appName == 'Netscape' && e.which == 3)
+{
+alert(message);
+}
+else if (navigator.appName == 'Microsoft Internet Explorer' && event.button==2)
+{
+alert(message);
+}
+return true;
+}
+document.onmousedown = droite;
+// -->
+</script>
+<script language="JavaScript1.2">
+
+function disableselect(e){
+return false
+}
+
+function reEnable(){
+return true
+}
+
+
+document.onselectstart=new Function ("return false")
+
+
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+</script>		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+		<style>
+			table
+{
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+}
+td
+{
+    border: 2px solid black;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+
+}
+
+button {
+	font-family: 'Oswald', sans-serif;
+}
+button:hover {
+	height: "50px";
+    width: "30px";
+}
+
+
+		</style>
+		<body><center>
+			<h1>Mon site</h1>
+			<img src="https://images.cooltext.com/5607841.png">
+			<h3>à propos</h3>
+								<hr>
+<a href="/"><button>Menu</button></a><a href="/freeimg"><button>Images libres de droits</button></a><a href="/vid"><button>Vidéos</button></a><a href="/about"><button>à propos</button></a>
+<br>
+			<hr>
+			<h3>Loïc Kuony 2022 tous droits réservés</h3>
+			<h3>Mon github : https://github.com/loickuony/</h3>
+			<h3>le github du site : https://github.com/loickuony/sitetest/</h3>
+
+		</center></body>
+	</head>
+</html>
